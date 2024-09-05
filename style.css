@@ -1,0 +1,33 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0);
+  border: 1px solid rgb(196, 192, 192);
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+.loading {
+  background-color: rgb(242, 229, 229);
+  margin: 5px 0;
+}
+.loader {
+  animation: loading 1s ease-in infinite;
+  font-size: 20px;
+  padding: 5px;
+}
+
+@keyframes loading {
+  from {
+    color: green;
+  }
+  to {
+    color: red;
+  }
+}

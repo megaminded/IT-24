@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/library/bootstrap.min.css">
+    <style>
+        .truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 offset-md-2">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <form onsubmit="saveNote(event)">
+                            <p id="message"></p>
+                            <div class="form-group">
+                                <label for="">Note</label>
+                                <textarea id="content" class="form-control"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary">Close</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
+                    </div>
+                    <div class="col-3">
+                        <div class="list-group mt-4 truncate" id="notes">
+
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-center align-items-center date">
+                            22nd July, 2024
+                        </div>
+                        <div id="note">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="/library/jquery.js"></script> -->
+    <script src="/library/bootstrap.min.js"></script>
+    <script src="note.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/library/bootstrap.min.css">
+    <style>
+        .keys {
+            background-color: black;
+            height: 100px;
+            border: 1px solid white;
+        }
+
+        .screen {
+            background-color: azure;
+            height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 offset-md-2">
+                <div class="row">
+                    <div class="col-12 screen shadow"></div>
+                    <audio src="/audio.mp3" class="hidden" id=""></audio>
+                </div>
+                <div class="row mt-1 shadow">
+                    <div class="col-1 keys" onclick="pressKeyboard('dee')"></div>
+                    <div class="col-1 keys" onclick="pressKeyboard('ree')"></div>
+                    <div class="col-1 keys" onclick="pressKeyboard('mee')"></div>
+                    <div class="col-1 keys" onclick="pressKeyboard('fa')"></div>
+                    <div class="col-1 keys" onclick="pressKeyboard('so')"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="/library/jquery.js"></script> -->
+    <script src="/library/bootstrap.min.js"></script>
+    <script src="keyboard.js"></script>
+</body>
+
+</html>

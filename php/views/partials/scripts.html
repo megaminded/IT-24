@@ -1,0 +1,9 @@
+<script>
+    function switchMode() {
+        const body = document.querySelector("#app");
+        const switchBtn = document.querySelector("#switch_btn");
+        switchBtn.textContent = "Light mode";
+        body.classList.remove('light-body');
+        body.classList.add('dark-body');
+    }
+</script>

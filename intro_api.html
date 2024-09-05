@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/library/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-4 shadow p-3" id="lyrics-form">
+                <p id="message"></p>
+                <div class="loading hidden">
+                    <span class="loader">Please wait...</span>
+                </div>
+                <div class="form-group">
+                    <label for="">Name of Artist</label>
+                    <input required type="text" name="artist" id="" class="form-control" placeholder=""
+                        aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <label for="">Title of Song</label>
+                    <input type="text" name="title" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Help text</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Find Lyrics</button>
+            </form>
+            <div class="col-8 my-5">
+                <div id="content">
+                    </d>
+                </div>
+            </div>
+        </div>
+
+        <script src="intro_api.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font-awesome/css/fontawesome-all.css">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            animation: rotating-div 5s infinite;
+        }
+
+        @keyframes rotating-div {
+            10% {
+                background-color: red;
+            }
+
+            15% {
+                background-color: yellow;
+            }
+
+            17% {
+                background-color: green;
+            }
+
+            50% {
+                width: 400px;
+            }
+
+            55% {
+                border-radius: 50%;
+                content: "Hello world";
+                color: white;
+            }
+
+            60% {
+                height: 400px;
+            }
+
+            70% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box i {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <i class="fa fa-power-off" aria-hidden="true"></i> -->
+    </div>
+</body>
+
+</html>

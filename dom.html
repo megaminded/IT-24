@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/library/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-sm-12 col-md-6 offset-md-3 mt-5 shadow p-5">
+            <div class="row">
+                a <input type="text" id="ainput">
+                <div class="col-12  my-2">
+                    <strong id="answer">0</strong>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                        <label for="">First number</label>
+                        <input class="form-control" type="text" id="first_number">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                        <label for="">Operator</label>
+                        <select class="form-control" id="operator">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="/">/</option>
+                            <option value="*">*</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="form-group">
+                        <label for="">Second number</label>
+                        <input class="form-control" type="text" id="second_number">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button type="button" id="submit" class="btn btn-primary">
+                            SOLVE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+
+</html>
